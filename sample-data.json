@@ -1,0 +1,19 @@
+{
+  "demoUser": {
+    "name": "Demo Alchemist",
+    "email": "demo@textalchemy.dev",
+    "password": "password123"
+  },
+  "history": [
+    {
+      "processType": "summarize",
+      "originalText": "TextAlchemy helps teams turn long, rough drafts into concise and readable content.",
+      "processedText": "TextAlchemy turns long drafts into concise, readable content."
+    },
+    {
+      "processType": "humanize",
+      "originalText": "Furthermore, organizations may utilize this system to improve content velocity.",
+      "processedText": "Also, teams can use this system to create clearer content faster."
+    }
+  ]
+}

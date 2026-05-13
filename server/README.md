@@ -20,6 +20,8 @@ MONGO_URI=mongodb://127.0.0.1:27017/textalchemy
 JWT_SECRET=replace_this_with_a_long_random_secret
 JWT_EXPIRES_IN=7d
 CLIENT_URL=http://localhost:5173
+# Production example:
+# CLIENT_URL=https://myapp.vercel.app
 RATE_LIMIT_WINDOW_MS=900000
 RATE_LIMIT_MAX=120
 OPENAI_API_KEY=
@@ -40,6 +42,15 @@ OPENAI_API_KEY=
 - `GET /api/history/analytics`
 
 All text and history routes require `Authorization: Bearer <token>`.
+
+## CORS
+
+The API reads the allowed frontend origin from `CLIENT_URL`.
+
+- Development: `CLIENT_URL=http://localhost:5173`
+- Production: `CLIENT_URL=https://myapp.vercel.app`
+
+In production, only `CLIENT_URL` is allowed. In development, localhost Vite support is kept for local testing.
 
 ## Dummy Data
 
